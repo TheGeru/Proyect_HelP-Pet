@@ -1,0 +1,30 @@
+<%- include("templates/menuProductos") %>
+<div class="New-Producto">
+    <button><a href="registrarProductos">Registrar Producto</a></button>
+</div>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>categoria</th>
+        <th>cantidad Disponible</th>
+    </thead>
+    <tbody>
+        <%
+        producto.forEach((producto)=>{
+        %>
+        <tr>
+            <td><%= producto.id_pro%></td>
+            <td><%= producto.nom_pro %></td>
+            <td><%= producto.prec_pro %></td>
+            <td><%= producto.cat_pro %></td>
+            <td><%= producto.cantD_pro %></td>
+        </tr>
+        <%
+        });
+        %>        
+    </tbody>
+</table>
+
+<%- include("templates/pieDePagina") %>;

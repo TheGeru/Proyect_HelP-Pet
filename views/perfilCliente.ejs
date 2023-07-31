@@ -1,0 +1,37 @@
+<%- include("templates/menuAccess") %>
+<div class="foto_perfil">
+<img src="https://imagizer.imageshack.com/img924/2877/wqONpB.jpg">
+</div>
+<div class="tabla_de_datos">
+    <h1 class="username_data">Datos del Usuario</h1>
+    <form action="#" method="post" id="datos_cliente">
+        <label for="Nombre de Usuario">Username</label> 
+        <input type="text">
+        <label for="contraseña">Contraseña</label>
+        <input type="password">
+        <label for="correo">Email</label>
+        <input type="text">
+        <a href="/editarDatos">Editar datos</a>
+    </form>
+</div>
+<div class="container_pets">
+    <h1 class="titulo_pets">Tus Mascotas</h1>
+<div>
+<div class="mascota_ej1">
+    <img src="https://imagizer.imageshack.com/img923/5238/o5ohUD.jpg">
+    <a href="/perfilMascota"><h2 class="nombre1">Dagoberto</h2></a>
+</div>
+<div class="mascota_ej2">
+    <img src="https://imagizer.imageshack.com/img923/8414/95zflL.jpg">
+    <a href="/perfilMascota"><h2 class="nombre2">Lucas</h2></a>
+</div>
+<div class="mascota_ej3">
+    <img src="https://imagizer.imageshack.com/img924/4793/6vxvl6.jpg">
+    <a href="/perfilMascota"><h2 class="nombre3">Roberto</h2></a>
+</div>
+<div class="mascota_ej3">
+    <img src="#">
+    <a href="/RegistroPet"><h2 class="nombre3">Registrar Nuevo</h2></a>
+</div>
+</div>
+<%- include("templates/pieDePagina") %>;

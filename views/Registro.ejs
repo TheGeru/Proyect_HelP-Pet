@@ -1,0 +1,46 @@
+<%-  %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/misitio/css/estilos.css">
+</head>
+<body>
+<div class="slider">
+    <ul>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/8174/pfKZM8.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img924/790/ARUzLZ.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/7128/godJmf.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/2307/SqjXPg.jpg">
+        </li>
+    </ul>
+    <div class="login-box">
+        <img src="https://pbs.twimg.com/media/F0U-AAwWwAEvBnq?format=png&name=240x240" class="avatar" alt="Avatar Image">
+        <h1>Login Here</h1>
+        <form action="/capturarUsuario" method="post" id="formulario" class="bg-black">
+          <!-- USERNAME INPUT -->
+          <label for="username">Username</label>
+          <input type="text" id="nom_cli" name="nom_cli" placeholder="Usuario">
+          <!-- PASSWORD INPUT -->
+          <label for="password">Password</label>
+          <input type="password" id="pass_cli" name="pass_cli" placeholder="Enter Password">
+          <label for="correo">Correo</label>
+          <input type="text" id="mail_cli" name="mail_cli" placeholder="Enter email">
+          <button type="submit" class="send">Crear cuenta</button>
+          <a href="#">¿Olvido su contraseña?</a><br>
+          <a href="/Registro">¿No tienes una cuenta?</a>
+        </form>
+      </div>
+</div>
+</body>
+</html>
+<%- %>

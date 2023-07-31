@@ -1,0 +1,40 @@
+<%-  %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/misitio/css/estilos.css">
+</head>
+<body>
+<div class="slider">
+    <ul>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/8174/pfKZM8.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img924/790/ARUzLZ.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/7128/godJmf.jpg">
+        </li>
+        <li>
+            <img src="https://imagizer.imageshack.com/img923/2307/SqjXPg.jpg">
+        </li>
+    </ul>
+    <div class="login-box">
+        <img src="https://pbs.twimg.com/media/F0U-AAwWwAEvBnq?format=png&name=240x240" class="avatar" alt="Avatar Image">
+        <h1>Welcome Admin</h1>
+        <form action="/validarAdmin" method="post" id="formulario" class="bg-black">
+          <label for="username">Username</label>
+          <input type="text" id="nom_admin" name="nom_admin" placeholder="Usuario">
+          <label for="password">Clave Admin</label>
+          <input type="password" id="clave_admin" name="clave_admin" placeholder="Clave Admin">
+          <button type="submit" class="send"><a href="/accessAdmin">Iniciar Sesion</a></button>
+        </form>
+      </div>
+</div>
+</body>
+</html>
+<%- %>
