@@ -96,10 +96,10 @@ rutas.get("/editarProductos/:id", (req, res) =>{
     });
 });
 
-rutas.get("/modificarProductos", (req, res)=>{
-    producto.Update(req.body,{where: {id_pro:req.body.id_pro}})
+rutas.post("/modificarProductos", (req, res)=>{
+    producto.update(req.body,{where: {id_pro:req.body.id_pro}})
     .then(()=>{
-        res.redirect("adminProducts");
+        res.redirect("accessAdmin");
     })
     .catch((err)=>{
         console.log("Err......."+ err);
