@@ -84,11 +84,30 @@ rutas.get("/adminProducts", (req, res)=>{
         console.log("Err: " + err);
     });
 });
+
+rutas.get("/editarProductos/:id", (req, res) =>{
+    producto.findByPk(req.params.id)
+    .then((producto)=>{
+        res.render("modificarProductos", {producto:producto});
+    })
+    .catch((err) =>{
+        console.log("Error....... :("+ err);
+        res.rendirect("accessAdmin")
+    });
+});
+
+rutas.get("/modificarProductos", (req, res)=>{
+    producto.Update(req.body,{where: {id_pro:req.body.id_pro}})
+    .then(()=>{
+        res.redirect("adminProducts");
+    })
+    .catch((err)=>{
+        console.log("Err......."+ err);
+        res.redirect("adminProducts")
+    });
+});
 //----------------------------------------------------DEFINICION DE RUTAS -------------------------------
 
-rutas.get("/editarProductos",(req, res)=>{
-    res.render("editarProductos")
-});
 rutas.get("/registrarProductos", (req, res)=>{
     res.render("registroProducto")
 });
