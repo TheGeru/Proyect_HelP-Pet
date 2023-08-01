@@ -9,6 +9,7 @@
         <th>Precio</th>
         <th>categoria</th>
         <th>cantidad Disponible</th>
+        <th>Editar  /  Borrar</th>
     </thead>
     <tbody>
         <%
@@ -20,6 +21,7 @@
             <td><%= producto.prec_pro %></td>
             <td><%= producto.cat_pro %></td>
             <td><%= producto.cantD_pro %></td>
+            <td><a href="/editarProductos/<%= producto.id_pro %>">Editar</a></td>
         </tr>
         <%
         });

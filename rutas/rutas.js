@@ -86,6 +86,9 @@ rutas.get("/adminProducts", (req, res)=>{
 });
 //----------------------------------------------------DEFINICION DE RUTAS -------------------------------
 
+rutas.get("/editarProductos",(req, res)=>{
+    res.render("editarProductos")
+});
 rutas.get("/registrarProductos", (req, res)=>{
     res.render("registroProducto")
 });
