@@ -106,6 +106,16 @@ rutas.post("/modificarProductos", (req, res)=>{
         res.redirect("adminProducts")
     });
 });
+
+rutas.get("/borrarProducto/:id", (req, res)=>{
+    producto.destroy({where:{id_pro:req.params.id}})//recuperar del url
+    .then(()=>{
+        res.redirect("/accessAdmin");
+    })
+    .catch((err)=>{
+        window.alert("Error de conexion a la base de datos"+err);
+    });
+});
 //----------------------------------------------------DEFINICION DE RUTAS -------------------------------
 
 rutas.get("/registrarProductos", (req, res)=>{
