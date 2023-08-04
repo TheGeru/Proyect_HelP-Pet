@@ -152,7 +152,7 @@ rutas.get("/market", (req, res)=>{
     res.render("market")
 });
 rutas.get("/inicioSesion", (req, res)=>{
-    res.render("inicioSesion")
+    res.render("sesionCliente")
 });
 rutas.get("/Registro",(req, res)=>{
     res.render("Registro")
