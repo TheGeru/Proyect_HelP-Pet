@@ -7,6 +7,16 @@
     #EE9F40,
     #ee874b );
 }
+
+@media (max-width: 768px){
+    .fondoP{ /*Fondo con color degradado*/
+        background: linear-gradient(to left, 
+        #FCF093, 
+        #F0D370, 
+        #EE9F40,
+        #ee874b );
+    }
+}
 /*-------------------------------CSS DEL PERFIL DEL USUARIO-------------------------*/
 .foto_perfil img{
     margin-left: 7%;

@@ -8,10 +8,13 @@ var app=express();
 app.set("view engine", "ejs");
 app.use("/misitio",express.static(path.join(__dirname,"/web")));
 app.use(express.urlencoded({extended:true}));
+
 app.use(session({
-    name:'session',
-    keys: [process.env.SECRETO_SESSION]
+    secret: "auhdljoq#$%(-)",
+    resave: false,
+    saveUnitialized: true,
 }));
+
 app.use("/",usuariosRutas);
 
 var port= process.env.PORT || 3000;

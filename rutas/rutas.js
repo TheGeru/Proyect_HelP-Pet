@@ -49,6 +49,7 @@ rutas.post('/validarUsuario', async (req, res)=>{
 
     if(usuarioClient){
         if(usuarioClient.pass_cli === pass_cli){
+            
             res.redirect("pantallaCliente");
         } else {
             res.send('Contraseña Incorrecto')
