@@ -17,6 +17,15 @@
         #ee874b );
     }
 }
+
+footer{
+    text-align: center;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Prompt', sans-serif;
+    background-color: black;
+    color: white;
+}
 /*-------------------------------CSS DEL PERFIL DEL USUARIO-------------------------*/
 .foto_perfil img {
     display: flex;
