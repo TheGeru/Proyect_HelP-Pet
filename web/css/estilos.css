@@ -621,15 +621,87 @@ img{
     font-size: 16px;
 }
 /*---------------------------------------------------CSS TABLAS-------------------------*/
-.New-Producto table, th, td {
+.Tabla_productos th, td {
     border: 1px solid;
     border-color: #000;
     font-family: 'Prompt', sans-serif;
   }
 
-.New-Producto table, thead, th{
+.Tabla_productos .encabezado_productos th{
     background-color: #000;
     color: white;
 }
 
-.New-Producto table, thead, tr:hover{background-color: rgb(219, 83, 33);}
+.Tabla_productos .encabezado_productos tr:hover{background-color: rgb(219, 83, 33);}
+
+/*.........................................................................................................*/
+
+.tabla_cliente .tbody_cliente td{
+    border-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.tabla_cliente .tbody_cliente td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla_cliente .tbody_cliente .campo{
+    background-color: #000;
+    color: white;
+}
+
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .btn-group .button .logout{
+    font-size: 20px;
+  }
+
+  .btn-group .button .logout:hover{
+    color: #000;
+  }
+
+  .tabla_cliente .tbody_cliente .editar{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    width: 87%;
+    cursor: pointer;
+  }
+
+  .tabla_cliente .tbody_cliente .editar:hover{
+    color: #000;
+  }
+
+  .btn-group .button .delete{
+    font-size: 20px;
+  }
+
+  .btn-group .button .delete:hover{
+    color: #000;
+  }
+
+  .btn-group .button:hover {
+    background-color: #3e8e41;
+  }

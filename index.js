@@ -10,6 +10,11 @@ app.use("/misitio",express.static(path.join(__dirname,"/web")));
 app.use(express.urlencoded({extended:true}));
 
 app.use(session({
+    name:'session',
+    keys: [process.env.SECRETO_SESSION]
+}));
+
+app.use(session({
     secret: "auhdljoq#$%(-)",
     resave: false,
     saveUnitialized: true,
